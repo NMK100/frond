@@ -1,26 +1,65 @@
-
-
 <div class="main">
-  <mat-toolbar color="primary">
-    <span>Login</span>
-  </mat-toolbar>
-
   <div class="login-container">
-    <mat-card>
-      <form>
-        <mat-form-field appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput type="email" required>
-        </mat-form-field>
 
-        <mat-form-field appearance="fill">
-          <mat-label>Password</mat-label>
-          <input matInput type="password" required>
-        </mat-form-field>
+    <div class="title">
+      <img src="logoP.png" alt="">
+      <a routerLink="/">visiter le site -></a>
+    </div>
 
-        <button mat-raised-button color="primary">Login</button>
-      </form>
-    </mat-card>
+    <div class="contenuLog">
+
+      <div class="login-form">
+        <form (submit)="onLogin()">
+          <div class="btn-container"></div>
+          <div class="error-message" *ngIf="errorMessage">
+            {{ errorMessage }}
+          </div>
+          <div appearance="fill">
+            <input type="email" required placeholder="Email" />
+          </div>
+          <div appearance="fill">
+            <input type="password" required placeholder="Mote de passe" /><br>
+            <a class="aGauche" routerLink="/motDePasseOblier" style="float: right;margin-top:10px ;">Mot de passe Oublié ?</a>
+          </div>
+
+          <div class="btn-container"></div>
+
+          <div appearance="fill">
+            <input type="submit" class="btn" value="se connecter" />
+          </div>
+
+        </form>
+      </div>
+
+      <div class="compte">
+        <p>Vous n’avez pas de compte? <a routerLink="/inscription">Incrivez-vous.</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="image">
+    <div class="imageDiv">
+      <img src="imgLog1.png" alt="">
+    </div>
+    <div>
+      <p class="p1"><span>Proposer</span> <br>des<br> idées de projet</p>
+    </div>
+    <div>
+      <p class="p2"><span>Créer</span> et<br> <span>Gérer</span><br>des projets</p>
+    </div>
+    <div  class="imageDiv">
+      <img src="imgLog2.png" alt="">
+    </div>
+    <div  class="imageDiv">
+      <img src="imgLog3.png" alt="">
+    </div>
+    <div>
+      <p class="p3"><span>Contribuer</span> <br>à leur <br>développement</p>
+    </div>
   </div>
 </div>
 
+<div class="footer">
+  <p>&copy; 2025 CollabDev. <span> nous contacter</span></p>
+</div>

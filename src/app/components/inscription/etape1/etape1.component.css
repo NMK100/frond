@@ -1,0 +1,126 @@
+.contenair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  background-color: #FFFFFF;
+}
+.row1, .row2 {
+  width: 469px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid 1.5px #334DAA;
+}
+
+.row1 {
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 308px;
+}
+.image{
+  width: 300px;
+  height: 80px;
+}
+.row1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.form input{
+  outline-color: #334DAA;
+  border: #334DAA solid 1.5px;
+  border-radius: 12px;
+  padding: 10px;
+  width: 293px;
+  margin: 10px auto;
+  background-color: #d9d9d989;
+  /* height: 30px; */
+
+}
+.radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+.radio input {
+  width: 20px;
+  height: 20px;
+  accent-color: #334DAA;
+  margin: 0 10px  0 10px;
+}
+
+.form input[type="submit"] {
+  background-color: #334DAA;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #2A3F8C;
+  cursor: pointer;
+}
+
+
+.row2 {
+  height: 16%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:  1px auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+.row2 p {
+  font-size: small;
+  margin: 2px auto;
+}
+.row2 a {
+  color: #334DAA;
+}
+
+.retour {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #334DAA;
+  font-size: small;
+  text-decoration: none;
+}
+.alert{
+  position: absolute;
+  top: -80px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* transform: translateX(50%); */
+  background-color: #f8d7dadd;
+  border: 1px solid #f5c6cb;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px 0 0 0;
+}
+
