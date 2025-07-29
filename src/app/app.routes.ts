@@ -4,7 +4,7 @@ import { InscriptionComponent } from './components/inscription/inscription.compo
 import { InscriptionChoixComponent } from './components/inscription/inscription-choix/inscription-choix.component';
 import { ContributeurComponent } from './components/inscription/contributeur/contributeur.component';
 import { GestionnaireComponent } from './components/inscription/gestionnaire/gestionnaire.component';
-import { IdeeProjetComponent } from './components/inscription/idee-projet/idee-projet.component';
+import { PorteurProjetComponent } from './components/inscription/porteur-projet/porteur-projet.component';
 import { InscriptionIndexComponent } from './components/inscription/inscription-index/inscription-index.component';
 
 export const routes: Routes = [
@@ -15,7 +15,7 @@ export const routes: Routes = [
     {path:'choix', component:InscriptionChoixComponent},
     {path:'contributeur', component:ContributeurComponent},
     {path:'gestionnaire', component:GestionnaireComponent},
-    {path:'idee_de_projet', component:IdeeProjetComponent},
+    {path:'idee_de_projet', component:PorteurProjetComponent},
     {path:'**', redirectTo: ''},
   ] },
 

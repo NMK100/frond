@@ -28,7 +28,7 @@ export class InscriptionIndexComponent {
 
   goToSuivant() {
       if (this.formContenu.valid) {
-        this.route.navigate(['inscription/etape1']);
+        this.route.navigate(['inscription/choix']);
       } else {
         this.erreur = "Veuillez remplir tous les champs correctement.";
         setTimeout(() => {

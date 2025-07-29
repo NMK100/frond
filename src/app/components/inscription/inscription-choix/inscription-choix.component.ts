@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-inscription-choix',
@@ -8,18 +8,18 @@ import { RouterLink } from '@angular/router';
   styleUrl: './inscription-choix.component.css'
 })
 export class InscriptionChoixComponent {
-  constructor(){}
+  constructor(private route:Router){}
   choix(ch:string){
     switch(ch){
       case "IDEE":
-        return;
+        return this.route.navigate(['inscription/idee_de_projet']);
       case "GESTIONNAIRE":
-        return;
+        return this.route.navigate(['inscription/gestionnaire']);
       case "CONTRIBUTEUR":
-        return;
+        return this.route.navigate(['inscription/contributeur']);
       default:
         console.error("Choix invalide: " + ch);
-        return;
+        return this.route.navigate(['inscription/choix']);
 
     }
 
