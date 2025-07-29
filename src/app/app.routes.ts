@@ -1,21 +1,21 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
-import { Etape1Component } from './components/inscription/etape1/etape1.component';
-import { Etape2Component } from './components/inscription/etape2/etape2.component';
-import { Etape3Component } from './components/inscription/etape3/etape3.component';
-import { Etape5Component } from './components/inscription/etape5/etape5.component';
-import { Etape4Component } from './components/inscription/etape4/etape4.component';
+import { InscriptionChoixComponent } from './components/inscription/inscription-choix/inscription-choix.component';
+import { ContributeurComponent } from './components/inscription/contributeur/contributeur.component';
+import { GestionnaireComponent } from './components/inscription/gestionnaire/gestionnaire.component';
+import { IdeeProjetComponent } from './components/inscription/idee-projet/idee-projet.component';
+import { InscriptionIndexComponent } from './components/inscription/inscription-index/inscription-index.component';
 
 export const routes: Routes = [
 
   {path: 'login',component:LoginComponent},
   {path: 'inscription',component:InscriptionComponent,children:[
-    {path:'', component:Etape1Component},
-    {path:'etape1', component:Etape2Component},
-    {path:'etape2', component:Etape3Component},
-    {path:'etape3', component:Etape4Component},
-    {path:'final', component:Etape5Component},
+    {path:'', component:InscriptionIndexComponent},
+    {path:'choix', component:InscriptionChoixComponent},
+    {path:'contributeur', component:ContributeurComponent},
+    {path:'gestionnaire', component:GestionnaireComponent},
+    {path:'idee_de_projet', component:IdeeProjetComponent},
     {path:'**', redirectTo: ''},
   ] },
 

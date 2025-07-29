@@ -18,7 +18,7 @@
           Vous avez des idées? Mais pas de ressources nécessaires pour leur concrétisation? Proposer les en tant que
         </p>
         <div class="a">
-          <a routerLink="/etape2">Porteur de projet -> </a>
+          <a  (click)="choix('IDEE')">Porteur de projet -> </a>
         </div>
 
       </div>
@@ -33,8 +33,8 @@
         <p>
           Vous avez des compétences en gestion de projet informatique et souhaitez créer des projets d’idées réelles? Continuez en tant que
         </p>
-        <div class="a">
-          <a routerLink="/etape2">Gestionnaire -> </a>
+        <div class="a"  (click)="choix('GESTIONNAIRE')">
+          <a>Gestionnaire -> </a>
         </div>
 
       </div>
@@ -49,8 +49,8 @@
         <p>
           Vous avez des compétences techniques en développement et souhaitez contribuer à l’élaboration de projets?Continuez en tant que
         </p>
-        <div class="a"  routerLink="/etape2">
-          <a>Contributeur -> </a>
+        <div class="a"  (click)="choix('CONTRIBUTEUR')">
+          <a>Contributeur - </a>
         </div>
 
       </div>

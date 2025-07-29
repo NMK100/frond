@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { RouterLink, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-etape1',
+  selector: 'app-inscription-index',
   imports: [RouterLink,ReactiveFormsModule,CommonModule],
-  templateUrl: './etape1.component.html',
-  styleUrl: './etape1.component.css'
+  templateUrl: './inscription-index.component.html',
+  styleUrl: './inscription-index.component.css'
 })
-export class Etape1Component {
+export class InscriptionIndexComponent {
+
   erreur: string | undefined;
   formContenu:FormGroup;
 
@@ -27,7 +28,7 @@ export class Etape1Component {
 
   goToSuivant() {
       if (this.formContenu.valid) {
-        this.route.navigate(['inscription/etape2']);
+        this.route.navigate(['inscription/etape1']);
       } else {
         this.erreur = "Veuillez remplir tous les champs correctement.";
         setTimeout(() => {
@@ -35,7 +36,5 @@ export class Etape1Component {
         }, 3000);
       }
   }
-
-  // Additional methods and properties can be added here as needed
 
 }

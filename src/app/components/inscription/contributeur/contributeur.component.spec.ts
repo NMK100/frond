@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Etape3Component } from './etape3.component';
+import { ContributeurComponent } from './contributeur.component';
 
-describe('Etape3Component', () => {
-  let component: Etape3Component;
-  let fixture: ComponentFixture<Etape3Component>;
+describe('ContributeurComponent', () => {
+  let component: ContributeurComponent;
+  let fixture: ComponentFixture<ContributeurComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Etape3Component]
+      imports: [ContributeurComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Etape3Component);
+    fixture = TestBed.createComponent(ContributeurComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
