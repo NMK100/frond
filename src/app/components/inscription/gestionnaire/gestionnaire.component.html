@@ -1,1 +1,29 @@
-<p>gestionnaire works!</p>
+<div class="contenair">
+  <div class="row1">
+
+    <div class="image">
+      <img src="gestionnaire.png" alt="">
+    </div>
+    <div class="right">
+      <img src="logoP.png" alt="">
+      <h1>Gestionnaire</h1>
+
+      <div class="file-upload">
+        <p class="p">Glissez déposez ou <strong>Parcourez votre bibliothèque</strong> </p>
+        <input type="file" (change)="fichierSelectionner($event)" accept=".pdf,.doc,.docx"/>
+      </div>
+      <form [formGroup]="conditionUtilisation" (submit)="valider()" >
+        <input type="radio" formControlName="condition" id="condition">
+        <label for="condition">Accepter les <a routerLink="/choix" routerLinkActive="router-link-active" >conditions générales d’utilisation</a>.</label><br>
+        <input type="submit" [disabled]="!conditionUtilisation.valid" value="S'inscrire">
+      </form>
+    </div>
+
+  </div>
+
+
+  <div class=" row2">
+        <p>Vous avez deja un compte ? </p>
+        <a routerLink="/login">Connectez-vous.</a>
+  </div>
+</div>
