@@ -1,0 +1,20 @@
+.entete{
+    background-color: white;
+    width: 90%;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    border: solid 1px grey;
+    display: flex;
+   
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    align-items: left;
+}
+.nav{
+     justify-content: space-around;
+}
+
