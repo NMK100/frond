@@ -1,12 +1,12 @@
 import { Users } from '../users';
 
 export class Contributeur {
-  private _user: Users;
-  private _niveau: string;
-  private _specialite: string;
-  private _type: string;
-  private _pieces: number;
-  private _uriCv: string;
+  private user: Users;
+  private niveau: string;
+  private specialite: string;
+  private type: string;
+  private pieces: number;
+  private uriCv: string;
 
   constructor(
     user: Users,
@@ -16,65 +16,65 @@ export class Contributeur {
     pieces: number,
     uriCv: string
   ) {
-    this._user = user;
-    this._niveau = niveau;
-    this._specialite = specialite;
-    this._type = type;
-    this._pieces = pieces;
-    this._uriCv = uriCv;
+    this.user = user;
+    this.niveau = niveau;
+    this.specialite = specialite;
+    this.type = type;
+    this.pieces = pieces;
+    this.uriCv = uriCv;
   }
 
   //User
   public get getUser(): Users {
-    return this._user;
+    return this.user;
   }
 
   public set setUser(user: Users) {
-    this._user = user;
+    this.user = user;
   }
 
   //niveau
   public get getNiveau(): string {
-    return this._niveau;
+    return this.niveau;
   }
 
   public set setNiveau(niveau: string) {
-    this._niveau = niveau;
+    this.niveau = niveau;
   }
 
   //Specialite
   public get getSpecialite(): string {
-    return this._specialite;
+    return this.specialite;
   }
 
   public set setSpecialite(specialite: string) {
-    this._specialite = specialite;
+    this.specialite = specialite;
   }
 
   //Type
   public get getType(): string {
-    return this._type;
+    return this.type;
   }
 
   public set setType(type: string) {
-    this._type = type;
+    this.type = type;
   }
 
   //pieces
   public get getPieces(): number {
-    return this._pieces;
+    return this.pieces;
   }
 
   public set setPieces(pieces: number) {
-    this._pieces = pieces;
+    this.pieces = pieces;
   }
 
   //UriCv
   public get getUriCv(): string {
-    return this._uriCv;
+    return this.uriCv;
   }
 
   public set setUriCv(uriCv: string) {
-    this._uriCv = uriCv;
+    this.uriCv = uriCv;
   }
 }

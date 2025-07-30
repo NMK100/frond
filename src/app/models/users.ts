@@ -1,9 +1,9 @@
 export class Users {
-  private _prenom: string;
-  private _nom: string;
-  private _email: string;
-  private _motDePasse: string;
-  private _genre: string;
+  private prenom: string;
+  private nom: string;
+  private email: string;
+  private motDePasse: string;
+  private genre: string;
 
   constructor(
     prenom: string,
@@ -12,57 +12,57 @@ export class Users {
     motDePasse: string,
     genre: string
   ) {
-    this._prenom = prenom;
-    this._nom = nom;
-    this._email = email;
-    this._motDePasse = motDePasse;
-    this._genre = genre;
+    this.prenom = prenom;
+    this.nom = nom;
+    this.email = email;
+    this.motDePasse = motDePasse;
+    this.genre = genre;
   }
 
   //Getter et setter
   //prenom
   public get getPrenom(): string {
-    return this._prenom;
+    return this.prenom;
   }
 
   public set setPrenom(prenom: string) {
-    this._prenom = prenom;
+    this.prenom = prenom;
   }
 
   //nom
   public get getNom(): string {
-    return this._nom;
+    return this.nom;
   }
 
   public set setNom(nom: string) {
-    this._nom = nom;
+    this.nom = nom;
   }
 
   //Email
   public get getEmail(): string {
-    return this._email;
+    return this.email;
   }
 
   public set setEmail(email: string) {
-    this._email = email;
+    this.email = email;
   }
 
   //Mot de passe
   public get getMotDePasse(): string {
-    return this._motDePasse;
+    return this.motDePasse;
   }
 
   public set setMotDePase(motDePasse: string) {
-    this._motDePasse = motDePasse;
+    this.motDePasse = motDePasse;
   }
 
   //Genre
   public get getGenre(): string {
-    return this._genre;
+    return this.genre;
   }
 
   public set setGenre(genre: string) {
-    this._genre = genre;
+    this.genre = genre;
   }
 
   public static readonly ROLE_CONTRIBUTEUR: string = 'CONTRIBUTEUR';

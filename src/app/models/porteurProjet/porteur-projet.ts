@@ -1,17 +1,17 @@
 import { Users } from '../users';
 
 export class PorteurProjet {
-  private _user: Users;
+  private user: Users;
   constructor(user: Users) {
-    this._user = user;
+    this.user = user;
   }
 
   //user
   public get getUser(): Users {
-    return this._user;
+    return this.user;
   }
 
   public set setUser(user: Users) {
-    this._user = user;
+    this.user = user;
   }
 }

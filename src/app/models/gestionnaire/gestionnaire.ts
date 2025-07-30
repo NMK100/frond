@@ -1,29 +1,29 @@
 import { Users } from '../users';
 
 export class Gestionnaire {
-  private _user: Users;
-  private _uriCv: string;
+  private user: Users;
+  private uriCv: string;
 
   constructor(user: Users, uriCv: string) {
-    this._user = user;
-    this._uriCv = uriCv;
+    this.user = user;
+    this.uriCv = uriCv;
   }
 
   //user
   public get getUser(): Users {
-    return this._user;
+    return this.user;
   }
 
   public set setUser(user: Users) {
-    this._user = user;
+    this.user = user;
   }
 
   //uricv
   public get getUriCv(): string {
-    return this._uriCv;
+    return this.uriCv;
   }
 
   public set setUriCv(uriCv: string) {
-    this._uriCv = uriCv;
+    this.uriCv = uriCv;
   }
 }

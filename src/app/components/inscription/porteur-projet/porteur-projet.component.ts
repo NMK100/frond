@@ -43,7 +43,7 @@ export class PorteurProjetComponent implements OnInit {
   valider() {
     if (this.conditionUtilisation.valid) {
       console.log('Conditions acceptées');
-      console.log('Données du porteur de projet :', this.user.getEmail);
+      console.log('Données du porteur de projet :', this.user);
       this.dataPorteur.addPorteur(this.user).subscribe({
         next: (response) => {
           console.log('Porteur de projet enregistré avec succès', response);
