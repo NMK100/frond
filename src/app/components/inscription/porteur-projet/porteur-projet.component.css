@@ -23,18 +23,20 @@
 }
 
 .image{
-  width: 660px;
-  height: 60vh;
+  width: auto;
+  height: auto;
   margin: 10px auto;
-  padding: 5px ;
-  background-color: #d9d9d9;
+  /* padding: 5px ; */
+  /* background-color: #d9d9d9; */
   border-radius: 10px;
+  box-shadow: 0 0 10px 3px #a1a1a1;
 }
 .row1 img {
   width: 100%;
   height: 98%;
 }
 .right {
+  width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -42,7 +44,8 @@
   justify-content: center;
   text-align: center;
   margin: 10px auto;
-  border: solid 1.5px #334DAA;
+  /* border: solid 1.5px #334DAA; */
+  box-shadow: 0 0 10px 3px #a1a1a1;
 }
 .right img {
   width: 300px;
@@ -51,8 +54,8 @@
 }
 .right h1 {
   font-size: 32px;
-  font-weight: bold;
-  color: #334DAA;
+  font-weight: 700;
+  color: #000;
   text-align: center;
   margin: 10px auto;
 }
@@ -64,14 +67,12 @@
 .right ul li {
   font-size: 15px;
   color: #333;
-  margin: 5px 0;
+  text-align: left;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: auto;
 }
-.right ul li::before {
-  content: "•";
-  color: #334DAA;
-  margin-right: 5px;
-}
-.right form button {
+.right form input[type="submit"] {
   background-color: #334DAA;
   color: #FFFFFF;
   font-size: large;
@@ -80,24 +81,20 @@
   border-radius: 12px;
   border: none;
   text-align: center;
-  /* padding-top: 10px; */
   cursor: pointer;
+  margin: 10px auto;
 }
-.right form button:hover {
+.right form input[type="submit"]:hover {
   background-color: #2a3f8c;
   transition: background-color 0.3s ease;
 }
-.row1 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px auto;
-}
-.row1 form input[type="radio"] {
-  float: left;
-  margin-right: 10px;
-  /* margin: 10px; */
+.row1 form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  /* font-size: larger; */
+  color: #334DAA;
+
+  margin-left: 15%;
   cursor: pointer;
 }
 
@@ -108,7 +105,7 @@
   width: 469px;
   margin: 10px auto;
   border-radius: 10px;
-  border: solid 1.5px #334DAA;
+  /* border: solid 1.5px #334DAA; */
   height: 16%;
   margin-bottom: 2%;
   display: flex;
@@ -117,6 +114,7 @@
   justify-content: center;
   padding:  1px auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 10px 3px #a1a1a1;
   border-radius: 10px;
 }
 .row2 p {

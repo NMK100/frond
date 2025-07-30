@@ -10,11 +10,11 @@
   width: 469px;
   margin: 10px auto;
   border-radius: 10px;
-  border: solid 1.5px #334DAA;
+  box-shadow: 0 0 10px 3px #a1a1a1;
 }
 
 .row1 {
-  height: 78%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,8 +77,8 @@
 }
 
 .form input[type="submit"]:hover {
-  background-color: #2A3F8C;
-  cursor: pointer;
+  background-color: #2a3f8c;
+  transition: background-color 0.3s ease;
 }
 
 

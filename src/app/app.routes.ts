@@ -9,15 +9,18 @@ import { InscriptionIndexComponent } from './components/inscription/inscription-
 
 export const routes: Routes = [
 
+  {
+    path: '', redirectTo: 'login', pathMatch: 'full'
+  },
   {path: 'login',component:LoginComponent},
   {path: 'inscription',component:InscriptionComponent,children:[
     {path:'', component:InscriptionIndexComponent},
     {path:'choix', component:InscriptionChoixComponent},
     {path:'contributeur', component:ContributeurComponent},
     {path:'gestionnaire', component:GestionnaireComponent},
-    {path:'idee_de_projet', component:PorteurProjetComponent},
+    {path:'porteur_de_projet', component:PorteurProjetComponent},
     {path:'**', redirectTo: ''},
-  ] },
+  ]},
 
 
 ];
