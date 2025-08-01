@@ -6,7 +6,8 @@ import { ContributeurComponent } from './components/inscription/contributeur/con
 import { GestionnaireComponent } from './components/inscription/gestionnaire/gestionnaire.component';
 import { PorteurProjetComponent } from './components/inscription/porteur-projet/porteur-projet.component';
 import { InscriptionIndexComponent } from './components/inscription/inscription-index/inscription-index.component';
-import {UIComponent} from './components/ui/ui.component';
+import { HeaderComponent } from './components/ui/header/header.component';
+
 export const routes: Routes = [
 
   {
@@ -21,9 +22,6 @@ export const routes: Routes = [
     {path:'porteur_de_projet', component:PorteurProjetComponent},
     {path:'**', redirectTo: ''},
   ]},
-  {path: 'ui', component:UIComponent},
-
-
-
+  {path: 'header', component:HeaderComponent},
 
 ];
